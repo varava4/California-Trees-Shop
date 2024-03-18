@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Blogs</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240318155703">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<svg width="206" height="206" viewBox="0 0 206 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g>
+							<path d="M100.345 61.9852C96.3102 60.886 91.7328 61.4005 88.1365 63.1847C85.1324 64.6611 82.682 66.837 81.062 69.4441C81.0208 69.4603 80.9773 69.4644 80.9361 69.4806C80.9691 69.4909 80.9935 69.5028 81.0272 69.5172C80.9936 69.5733 80.96 69.6295 80.9307 69.6849C80.9098 69.6681 80.8889 69.6514 80.8688 69.6386C80.943 69.4004 81.0408 69.1702 81.1243 68.9344C83.1829 66.1193 85.2456 63.6976 87.5129 61.793C89.8508 59.8168 92.3488 58.5197 95.1081 57.8036C97.8665 57.0835 100.935 56.9226 104.212 57.0665C107.494 57.1886 110.916 57.6533 114.692 57.8558C112.131 55.2893 108.956 53.4249 105.345 52.2492C101.754 51.1071 97.5788 50.711 93.4722 51.7914C89.3571 52.8279 85.6637 55.4977 83.519 58.7442C82.8349 59.7789 82.2792 60.8598 81.8386 61.9644C81.7871 61.3684 81.757 60.7683 81.6349 60.1733C80.912 56.4687 78.4976 52.8328 75.0575 50.5998C71.6353 48.3217 67.5652 47.4077 63.7513 47.3744C59.9062 47.3636 56.1877 48.1337 52.7763 49.7499C56.396 50.7164 59.7859 51.3367 62.9144 52.2349C66.0383 53.1091 68.8537 54.1998 71.154 55.7245C73.4578 57.2445 75.2876 59.2281 76.6984 61.8018C77.8382 63.8587 78.7025 66.2128 79.4335 68.8205C78.338 66.2283 76.4231 63.9372 73.93 62.167C70.7635 59.9067 66.3628 58.7444 62.1573 59.2587C57.9425 59.7249 54.186 61.5976 51.2475 63.9537C48.2988 66.349 46.0055 69.2336 44.5332 72.5471C47.9789 70.9949 51.01 69.3349 54.0306 68.038C57.031 66.7282 59.9529 65.7737 62.7876 65.454C65.6165 65.1271 68.4117 65.4373 71.3038 66.4428C72.8096 66.957 74.3175 67.6451 75.8432 68.45C74.4167 68.5847 72.969 69.0968 71.8154 69.9678C70.2759 71.0907 69.2791 72.6456 68.7212 74.2041C68.175 75.7769 68.0032 77.3864 68.2623 78.9802C69.2208 77.6193 69.9893 76.3071 70.8509 75.1348C71.6946 73.9617 72.5987 72.9431 73.6273 72.183C74.6524 71.4278 75.8303 70.9172 77.2189 70.6529C77.7821 70.5415 78.3924 70.4917 79.0086 70.4491C78.0909 72.2338 77.2802 74.0686 76.5913 75.9383C74.9926 80.309 73.922 84.8488 73.1751 89.4142C72.4281 93.9796 71.4067 103.231 71.4067 103.231C71.4067 103.231 69.5527 114.186 69.9453 119.015L84.4017 119.015C83.2278 115.081 80.818 106.818 80.0958 102.582C79.373 98.2966 78.8743 93.9558 78.6831 89.6022C78.4997 85.243 78.6207 80.8548 79.2711 76.5029C79.558 74.6142 79.9733 72.7261 80.4996 70.8624C80.8596 70.7067 81.2083 70.5615 81.5605 70.4115C81.654 70.4144 81.7418 70.4102 81.8396 70.4123C81.8121 70.3843 81.7769 70.362 81.7459 70.3389C81.971 70.2421 82.2003 70.1445 82.4219 70.0525C83.3894 70.4368 84.2994 70.8445 85.0669 71.3415C86.2199 72.0722 87.0743 72.9552 87.6838 74.0176C88.2918 75.072 88.668 75.9186 88.668 75.9186L90.1131 79.044L90.7851 76.1753C90.9611 75.4241 91.0326 74.64 90.8399 73.893C90.316 71.8619 89.2448 71.1332 89.2448 71.1332C89.2448 71.1332 87.8336 69.8273 86.1046 69.3266C85.7343 69.2186 85.3623 69.1484 84.984 69.0918C86.6365 68.5158 88.2462 68.0641 89.8251 67.776C92.8843 67.1937 95.7039 67.2835 98.427 68.0058C101.149 68.7241 103.824 70.0779 106.507 71.7955C109.21 73.505 111.847 75.5673 114.915 77.5891C114.161 74.1145 112.508 70.9477 110.107 68.1684C107.707 65.422 104.403 63.0467 100.345 61.9852Z" />
+						</g>
+						<path d="M22.8916 116.456C20.4917 116.456 18.6539 115.772 17.378 114.405C16.1325 113.038 15.5098 111.109 15.5098 108.618V91.4852C15.5098 88.9942 16.1325 87.0652 17.378 85.6982C18.6539 84.3312 20.4917 83.6477 22.8916 83.6477C25.2915 83.6477 27.1141 84.3312 28.3596 85.6982C29.6355 87.0652 30.2734 88.9942 30.2734 91.4852V94.8572H25.5345V91.1662C25.5345 89.1917 24.6991 88.2044 23.0283 88.2044C21.3575 88.2044 20.5221 89.1917 20.5221 91.1662V108.983C20.5221 110.927 21.3575 111.899 23.0283 111.899C24.6991 111.899 25.5345 110.927 25.5345 108.983V104.107H30.2734V108.618C30.2734 111.109 29.6355 113.038 28.3596 114.405C27.1141 115.772 25.2915 116.456 22.8916 116.456Z" fill="#008542" />
+						<path d="M38.5125 84.1034H45.302L50.4966 116H45.4843L44.5729 109.666V109.758H38.8771L37.9657 116H33.3179L38.5125 84.1034ZM43.9805 105.429L41.7478 89.6625H41.6566L39.4694 105.429H43.9805Z" fill="#008542" />
+						<path d="M54.2954 84.1034H59.3078V111.444H67.5554V116H54.2954V84.1034Z" fill="#008542" />
+						<path d="M88.6557 84.1034H101.916V88.6601H93.6681V97.5456H100.139V102.102H93.6681V116H88.6557V84.1034Z" fill="#008542" />
+						<path d="M112.931 116.456C110.471 116.456 108.587 115.757 107.281 114.36C105.975 112.962 105.322 110.988 105.322 108.436V91.6675C105.322 89.1157 105.975 87.1412 107.281 85.7438C108.587 84.3464 110.471 83.6477 112.931 83.6477C115.392 83.6477 117.276 84.3464 118.582 85.7438C119.888 87.1412 120.541 89.1157 120.541 91.6675V108.436C120.541 110.988 119.888 112.962 118.582 114.36C117.276 115.757 115.392 116.456 112.931 116.456ZM112.931 111.899C114.663 111.899 115.529 110.851 115.529 108.755V91.3485C115.529 89.2524 114.663 88.2044 112.931 88.2044C111.2 88.2044 110.334 89.2524 110.334 91.3485V108.755C110.334 110.851 111.2 111.899 112.931 111.899Z" fill="#008542" />
+						<path d="M125.298 84.1034H132.725C135.307 84.1034 137.191 84.7109 138.376 85.9261C139.56 87.1108 140.153 88.9487 140.153 91.4396V93.399C140.153 96.7102 139.059 98.8063 136.872 99.6873V99.7784C138.087 100.143 138.938 100.887 139.424 102.011C139.94 103.135 140.198 104.639 140.198 106.522V112.127C140.198 113.038 140.229 113.783 140.289 114.36C140.35 114.907 140.502 115.453 140.745 116H135.642C135.459 115.484 135.338 114.998 135.277 114.542C135.216 114.086 135.186 113.266 135.186 112.081V106.249C135.186 104.791 134.943 103.773 134.457 103.196C134.001 102.619 133.196 102.33 132.042 102.33H130.31V116H125.298V84.1034ZM132.133 97.7735C133.135 97.7735 133.88 97.5152 134.366 96.9988C134.882 96.4824 135.14 95.6166 135.14 94.4015V91.9409C135.14 90.7865 134.928 89.9511 134.502 89.4347C134.108 88.9183 133.47 88.6601 132.589 88.6601H130.31V97.7735H132.133Z" fill="#008542" />
+						<path d="M145.043 84.1034H151.331L156.207 103.196H156.298V84.1034H160.764V116H155.615L149.6 92.7155H149.509V116H145.043V84.1034Z" fill="#008542" />
+						<path d="M165.856 84.1034H170.868V116H165.856V84.1034Z" fill="#008542" />
+						<path d="M179.863 84.1034H186.652L191.847 116H186.834L185.923 109.666V109.758H180.227L179.316 116H174.668L179.863 84.1034ZM185.331 105.429L183.098 89.6625H183.007L180.819 105.429H185.331Z" fill="#008542" />
+						<path d="M63.5996 130.36H58.3594V125.803H73.8521V130.36H68.6119V157.7H63.5996V130.36Z" />
+						<path d="M77.6459 125.803H85.0733C87.6555 125.803 89.5389 126.411 90.7236 127.626C91.9084 128.81 92.5007 130.648 92.5007 133.139V135.099C92.5007 138.41 91.4071 140.506 89.2199 141.387V141.478C90.435 141.843 91.2856 142.587 91.7717 143.711C92.2881 144.835 92.5463 146.339 92.5463 148.222V153.827C92.5463 154.738 92.5767 155.482 92.6375 156.06C92.6982 156.606 92.8501 157.153 93.0931 157.7H87.9896C87.8074 157.184 87.6858 156.697 87.6251 156.242C87.5643 155.786 87.534 154.966 87.534 153.781V147.949C87.534 146.49 87.2909 145.473 86.8049 144.896C86.3492 144.318 85.5442 144.03 84.3898 144.03H82.6583V157.7H77.6459V125.803ZM84.481 139.473C85.4834 139.473 86.2277 139.215 86.7137 138.699C87.2302 138.182 87.4884 137.316 87.4884 136.101V133.641C87.4884 132.486 87.2757 131.651 86.8505 131.134C86.4555 130.618 85.8176 130.36 84.9366 130.36H82.6583V139.473H84.481Z" />
+						<path d="M97.391 125.803H111.061V130.36H102.403V138.79H109.284V143.346H102.403V153.143H111.061V157.7H97.391V125.803Z" />
+						<path d="M115.312 125.803H128.982V130.36H120.324V138.79H127.205V143.346H120.324V153.143H128.982V157.7H115.312V125.803Z" />
+						<path d="M139.837 158.156C137.407 158.156 135.569 157.472 134.324 156.105C133.078 154.708 132.455 152.718 132.455 150.136V148.313H137.194V150.5C137.194 152.566 138.06 153.599 139.792 153.599C140.642 153.599 141.28 153.356 141.706 152.87C142.161 152.353 142.389 151.533 142.389 150.409C142.389 149.073 142.085 147.903 141.478 146.901C140.87 145.868 139.746 144.637 138.106 143.21C136.04 141.387 134.597 139.747 133.777 138.288C132.957 136.8 132.547 135.129 132.547 133.276C132.547 130.755 133.185 128.81 134.46 127.443C135.736 126.046 137.589 125.347 140.02 125.347C142.419 125.347 144.227 126.046 145.442 127.443C146.688 128.81 147.31 130.785 147.31 133.367V134.689H142.571V133.048C142.571 131.955 142.359 131.165 141.933 130.679C141.508 130.162 140.885 129.904 140.065 129.904C138.394 129.904 137.559 130.922 137.559 132.957C137.559 134.111 137.863 135.19 138.47 136.192C139.108 137.195 140.247 138.41 141.888 139.838C143.984 141.66 145.427 143.316 146.217 144.804C147.007 146.293 147.401 148.04 147.401 150.045C147.401 152.657 146.748 154.662 145.442 156.06C144.166 157.457 142.298 158.156 139.837 158.156Z" />
+						<mask fill="white">
+							<path d="M181.645 80.1773C177.163 62.9016 167.082 47.5981 152.98 36.6586C138.878 25.7191 121.549 19.7602 103.701 19.7132C85.8532 19.6663 68.4929 25.534 54.3334 36.3992C40.1739 47.2644 30.0132 62.5147 25.4396 79.7665L28.05 80.4586C32.4707 63.7838 42.2915 49.0435 55.9774 38.5417C69.6634 28.04 86.4431 22.3685 103.694 22.4139C120.945 22.4592 137.694 28.2188 151.325 38.7924C164.955 49.3661 174.698 64.1578 179.031 80.8556L181.645 80.1773Z" />
+						</mask>
+						<path d="M181.645 80.1773C177.163 62.9016 167.082 47.5981 152.98 36.6586C138.878 25.7191 121.549 19.7602 103.701 19.7132C85.8532 19.6663 68.4929 25.534 54.3334 36.3992C40.1739 47.2644 30.0132 62.5147 25.4396 79.7665L28.05 80.4586C32.4707 63.7838 42.2915 49.0435 55.9774 38.5417C69.6634 28.04 86.4431 22.3685 103.694 22.4139C120.945 22.4592 137.694 28.2188 151.325 38.7924C164.955 49.3661 174.698 64.1578 179.031 80.8556L181.645 80.1773Z" stroke="#B71234" stroke-width="6" mask="url(#path-4-inside-1_17_6959)" />
+						<mask fill="white">
+							<path d="M24.578 122.23C28.9078 139.887 39.0698 155.567 53.4192 166.73C67.7685 177.894 85.4653 183.888 103.645 183.743C121.825 183.597 139.424 177.321 153.593 165.93C167.762 154.538 177.672 138.699 181.719 120.975L179.086 120.373C175.175 137.505 165.596 152.815 151.901 163.825C138.205 174.835 121.195 180.902 103.624 181.042C86.0518 181.183 68.9469 175.389 55.0775 164.599C41.2081 153.809 31.3859 138.654 27.2009 121.587L24.578 122.23Z" />
+						</mask>
+						<path d="M24.578 122.23C28.9078 139.887 39.0698 155.567 53.4192 166.73C67.7685 177.894 85.4653 183.888 103.645 183.743C121.825 183.597 139.424 177.321 153.593 165.93C167.762 154.538 177.672 138.699 181.719 120.975L179.086 120.373C175.175 137.505 165.596 152.815 151.901 163.825C138.205 174.835 121.195 180.902 103.624 181.042C86.0518 181.183 68.9469 175.389 55.0775 164.599C41.2081 153.809 31.3859 138.654 27.2009 121.587L24.578 122.23Z" stroke="#B71234" stroke-width="6" mask="url(#path-5-inside-2_17_6959)" />
+						<defs>
+							<clipPath>
+								<rect width="72.7845" height="72.7845" fill="white" transform="translate(43.2129 43.2158)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="index.html" class="menu__link">Homepage</a></li>
+							<li class="menu__item"><a href="catalog.html" class="menu__link">Catalog</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+							<li class="menu__item"><a href="blogs.html" class="menu__link">blog</a></li>
+							<li class="menu__item"><a href="billing-shippping.html" class="menu__link">Billing & Shipping </a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__buttons">
+					<a data-da=".menu__body,767.98" href="#" data-goto=".footer" class="header__button button">contact us</a>
+					<a href="catalog.html" class="header__link">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M21.0004 20.9999L16.6504 16.6499" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</a>
+					<a href="cart.html" class="header__link">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.81043 2L5.19043 5.63" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M15.1904 2L18.8104 5.63" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M2 7.8501C2 6.0001 2.99 5.8501 4.22 5.8501H19.78C21.01 5.8501 22 6.0001 22 7.8501C22 10.0001 21.01 9.8501 19.78 9.8501H4.22C2.99 9.8501 2 10.0001 2 7.8501Z" stroke-width="1.5" />
+							<path d="M9.75977 14V17.55" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M14.3604 14V17.55" stroke-width="1.5" stroke-linecap="round" />
+							<path d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10" stroke-width="1.5" stroke-linecap="round" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__our-blogs our-blogs">
+				<div class="our-blogs__container">
+					<h2 class="our-blogs__title title">Our Blog</h2>
+					<div class="our-blogs__slider swiper">
+						<div class="our-blogs__wrapper swiper-wrapper">
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture1.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+							<div class="our-blogs__slide swiper-slide">
+								<a href="blogs1.html" class="blog__item item-blog">
+									<div class="item-blog__content">
+										<div class="item-blog__label">10 Fast-Growing Trees for Indiana Gardens & Landscapes</div>
+										<div class="item-blog__text text">
+											<p>
+												The state of Indiana is largely covered in farmland, with almost two-thirds of the land used for agriculture. Because of this, many homeowners are on the lookout for fast-growing...
+											</p>
+										</div>
+									</div>
+									<div class="item-blog__image"><picture><source data-srcset="img/blog/picture2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/blog/picture2.jpg" alt="Picture"></picture></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="our-blogs__swiper-control">
+						<button type="button" class="our-blogs__button-prev arrow"></button>
+						<div class="our-blogs__swiper-pagination swiper-pagination"></div>
+						<button type="button" class="our-blogs__button-next arrow"></button>
+					</div>
+				</div>
+			</section>
+			<section data-watch class="page__new-products new-products">
+				<div class="new-products__container">
+					<h2 class="new-products__title title">New products</h2>
+					<div class="new-products__slider swiper">
+						<div class="new-products__wrapper swiper-wrapper">
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__discount">20%</div>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$349</span>
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__discount">20%</div>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$349</span>
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+							<div class="new-products__slide card-tree swiper-slide">
+								<a href="purchase.html" class="card-tree__link">
+									<div class="card-tree__image"><picture><source data-srcset="img/card/picture1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/card/picture1.jpg" alt="Picture"></picture></div>
+									<h6 class="card-tree__label">Name of tree</h6>
+									<div class="card-tree__rating">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star-active.svg" alt="Star">
+										<img data-src="img/star.svg" alt="Star">
+										<span>(6)</span>
+									</div>
+									<div class="card-tree__value">
+										<span>$249</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="new-products__buttons">
+							<button type="button" class="new-products__button-prev arrow"></button>
+							<button type="button" class="new-products__button-next arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__main">
+						<a href="index.html" class="footer__logo">
+							<svg width="206" height="206" viewBox="0 0 206 206" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g>
+									<path d="M100.345 61.9852C96.3102 60.886 91.7328 61.4005 88.1365 63.1847C85.1324 64.6611 82.682 66.837 81.062 69.4441C81.0208 69.4603 80.9773 69.4644 80.9361 69.4806C80.9691 69.4909 80.9935 69.5028 81.0272 69.5172C80.9936 69.5733 80.96 69.6295 80.9307 69.6849C80.9098 69.6681 80.8889 69.6514 80.8688 69.6386C80.943 69.4004 81.0408 69.1702 81.1243 68.9344C83.1829 66.1193 85.2456 63.6976 87.5129 61.793C89.8508 59.8168 92.3488 58.5197 95.1081 57.8036C97.8665 57.0835 100.935 56.9226 104.212 57.0665C107.494 57.1886 110.916 57.6533 114.692 57.8558C112.131 55.2893 108.956 53.4249 105.345 52.2492C101.754 51.1071 97.5788 50.711 93.4722 51.7914C89.3571 52.8279 85.6637 55.4977 83.519 58.7442C82.8349 59.7789 82.2792 60.8598 81.8386 61.9644C81.7871 61.3684 81.757 60.7683 81.6349 60.1733C80.912 56.4687 78.4976 52.8328 75.0575 50.5998C71.6353 48.3217 67.5652 47.4077 63.7513 47.3744C59.9062 47.3636 56.1877 48.1337 52.7763 49.7499C56.396 50.7164 59.7859 51.3367 62.9144 52.2349C66.0383 53.1091 68.8537 54.1998 71.154 55.7245C73.4578 57.2445 75.2876 59.2281 76.6984 61.8018C77.8382 63.8587 78.7025 66.2128 79.4335 68.8205C78.338 66.2283 76.4231 63.9372 73.93 62.167C70.7635 59.9067 66.3628 58.7444 62.1573 59.2587C57.9425 59.7249 54.186 61.5976 51.2475 63.9537C48.2988 66.349 46.0055 69.2336 44.5332 72.5471C47.9789 70.9949 51.01 69.3349 54.0306 68.038C57.031 66.7282 59.9529 65.7737 62.7876 65.454C65.6165 65.1271 68.4117 65.4373 71.3038 66.4428C72.8096 66.957 74.3175 67.6451 75.8432 68.45C74.4167 68.5847 72.969 69.0968 71.8154 69.9678C70.2759 71.0907 69.2791 72.6456 68.7212 74.2041C68.175 75.7769 68.0032 77.3864 68.2623 78.9802C69.2208 77.6193 69.9893 76.3071 70.8509 75.1348C71.6946 73.9617 72.5987 72.9431 73.6273 72.183C74.6524 71.4278 75.8303 70.9172 77.2189 70.6529C77.7821 70.5415 78.3924 70.4917 79.0086 70.4491C78.0909 72.2338 77.2802 74.0686 76.5913 75.9383C74.9926 80.309 73.922 84.8488 73.1751 89.4142C72.4281 93.9796 71.4067 103.231 71.4067 103.231C71.4067 103.231 69.5527 114.186 69.9453 119.015L84.4017 119.015C83.2278 115.081 80.818 106.818 80.0958 102.582C79.373 98.2966 78.8743 93.9558 78.6831 89.6022C78.4997 85.243 78.6207 80.8548 79.2711 76.5029C79.558 74.6142 79.9733 72.7261 80.4996 70.8624C80.8596 70.7067 81.2083 70.5615 81.5605 70.4115C81.654 70.4144 81.7418 70.4102 81.8396 70.4123C81.8121 70.3843 81.7769 70.362 81.7459 70.3389C81.971 70.2421 82.2003 70.1445 82.4219 70.0525C83.3894 70.4368 84.2994 70.8445 85.0669 71.3415C86.2199 72.0722 87.0743 72.9552 87.6838 74.0176C88.2918 75.072 88.668 75.9186 88.668 75.9186L90.1131 79.044L90.7851 76.1753C90.9611 75.4241 91.0326 74.64 90.8399 73.893C90.316 71.8619 89.2448 71.1332 89.2448 71.1332C89.2448 71.1332 87.8336 69.8273 86.1046 69.3266C85.7343 69.2186 85.3623 69.1484 84.984 69.0918C86.6365 68.5158 88.2462 68.0641 89.8251 67.776C92.8843 67.1937 95.7039 67.2835 98.427 68.0058C101.149 68.7241 103.824 70.0779 106.507 71.7955C109.21 73.505 111.847 75.5673 114.915 77.5891C114.161 74.1145 112.508 70.9477 110.107 68.1684C107.707 65.422 104.403 63.0467 100.345 61.9852Z" />
+								</g>
+								<path d="M22.8916 116.456C20.4917 116.456 18.6539 115.772 17.378 114.405C16.1325 113.038 15.5098 111.109 15.5098 108.618V91.4852C15.5098 88.9942 16.1325 87.0652 17.378 85.6982C18.6539 84.3312 20.4917 83.6477 22.8916 83.6477C25.2915 83.6477 27.1141 84.3312 28.3596 85.6982C29.6355 87.0652 30.2734 88.9942 30.2734 91.4852V94.8572H25.5345V91.1662C25.5345 89.1917 24.6991 88.2044 23.0283 88.2044C21.3575 88.2044 20.5221 89.1917 20.5221 91.1662V108.983C20.5221 110.927 21.3575 111.899 23.0283 111.899C24.6991 111.899 25.5345 110.927 25.5345 108.983V104.107H30.2734V108.618C30.2734 111.109 29.6355 113.038 28.3596 114.405C27.1141 115.772 25.2915 116.456 22.8916 116.456Z" fill="#008542" />
+								<path d="M38.5125 84.1034H45.302L50.4966 116H45.4843L44.5729 109.666V109.758H38.8771L37.9657 116H33.3179L38.5125 84.1034ZM43.9805 105.429L41.7478 89.6625H41.6566L39.4694 105.429H43.9805Z" fill="#008542" />
+								<path d="M54.2954 84.1034H59.3078V111.444H67.5554V116H54.2954V84.1034Z" fill="#008542" />
+								<path d="M88.6557 84.1034H101.916V88.6601H93.6681V97.5456H100.139V102.102H93.6681V116H88.6557V84.1034Z" fill="#008542" />
+								<path d="M112.931 116.456C110.471 116.456 108.587 115.757 107.281 114.36C105.975 112.962 105.322 110.988 105.322 108.436V91.6675C105.322 89.1157 105.975 87.1412 107.281 85.7438C108.587 84.3464 110.471 83.6477 112.931 83.6477C115.392 83.6477 117.276 84.3464 118.582 85.7438C119.888 87.1412 120.541 89.1157 120.541 91.6675V108.436C120.541 110.988 119.888 112.962 118.582 114.36C117.276 115.757 115.392 116.456 112.931 116.456ZM112.931 111.899C114.663 111.899 115.529 110.851 115.529 108.755V91.3485C115.529 89.2524 114.663 88.2044 112.931 88.2044C111.2 88.2044 110.334 89.2524 110.334 91.3485V108.755C110.334 110.851 111.2 111.899 112.931 111.899Z" fill="#008542" />
+								<path d="M125.298 84.1034H132.725C135.307 84.1034 137.191 84.7109 138.376 85.9261C139.56 87.1108 140.153 88.9487 140.153 91.4396V93.399C140.153 96.7102 139.059 98.8063 136.872 99.6873V99.7784C138.087 100.143 138.938 100.887 139.424 102.011C139.94 103.135 140.198 104.639 140.198 106.522V112.127C140.198 113.038 140.229 113.783 140.289 114.36C140.35 114.907 140.502 115.453 140.745 116H135.642C135.459 115.484 135.338 114.998 135.277 114.542C135.216 114.086 135.186 113.266 135.186 112.081V106.249C135.186 104.791 134.943 103.773 134.457 103.196C134.001 102.619 133.196 102.33 132.042 102.33H130.31V116H125.298V84.1034ZM132.133 97.7735C133.135 97.7735 133.88 97.5152 134.366 96.9988C134.882 96.4824 135.14 95.6166 135.14 94.4015V91.9409C135.14 90.7865 134.928 89.9511 134.502 89.4347C134.108 88.9183 133.47 88.6601 132.589 88.6601H130.31V97.7735H132.133Z" fill="#008542" />
+								<path d="M145.043 84.1034H151.331L156.207 103.196H156.298V84.1034H160.764V116H155.615L149.6 92.7155H149.509V116H145.043V84.1034Z" fill="#008542" />
+								<path d="M165.856 84.1034H170.868V116H165.856V84.1034Z" fill="#008542" />
+								<path d="M179.863 84.1034H186.652L191.847 116H186.834L185.923 109.666V109.758H180.227L179.316 116H174.668L179.863 84.1034ZM185.331 105.429L183.098 89.6625H183.007L180.819 105.429H185.331Z" fill="#008542" />
+								<path d="M63.5996 130.36H58.3594V125.803H73.8521V130.36H68.6119V157.7H63.5996V130.36Z" />
+								<path d="M77.6459 125.803H85.0733C87.6555 125.803 89.5389 126.411 90.7236 127.626C91.9084 128.81 92.5007 130.648 92.5007 133.139V135.099C92.5007 138.41 91.4071 140.506 89.2199 141.387V141.478C90.435 141.843 91.2856 142.587 91.7717 143.711C92.2881 144.835 92.5463 146.339 92.5463 148.222V153.827C92.5463 154.738 92.5767 155.482 92.6375 156.06C92.6982 156.606 92.8501 157.153 93.0931 157.7H87.9896C87.8074 157.184 87.6858 156.697 87.6251 156.242C87.5643 155.786 87.534 154.966 87.534 153.781V147.949C87.534 146.49 87.2909 145.473 86.8049 144.896C86.3492 144.318 85.5442 144.03 84.3898 144.03H82.6583V157.7H77.6459V125.803ZM84.481 139.473C85.4834 139.473 86.2277 139.215 86.7137 138.699C87.2302 138.182 87.4884 137.316 87.4884 136.101V133.641C87.4884 132.486 87.2757 131.651 86.8505 131.134C86.4555 130.618 85.8176 130.36 84.9366 130.36H82.6583V139.473H84.481Z" />
+								<path d="M97.391 125.803H111.061V130.36H102.403V138.79H109.284V143.346H102.403V153.143H111.061V157.7H97.391V125.803Z" />
+								<path d="M115.312 125.803H128.982V130.36H120.324V138.79H127.205V143.346H120.324V153.143H128.982V157.7H115.312V125.803Z" />
+								<path d="M139.837 158.156C137.407 158.156 135.569 157.472 134.324 156.105C133.078 154.708 132.455 152.718 132.455 150.136V148.313H137.194V150.5C137.194 152.566 138.06 153.599 139.792 153.599C140.642 153.599 141.28 153.356 141.706 152.87C142.161 152.353 142.389 151.533 142.389 150.409C142.389 149.073 142.085 147.903 141.478 146.901C140.87 145.868 139.746 144.637 138.106 143.21C136.04 141.387 134.597 139.747 133.777 138.288C132.957 136.8 132.547 135.129 132.547 133.276C132.547 130.755 133.185 128.81 134.46 127.443C135.736 126.046 137.589 125.347 140.02 125.347C142.419 125.347 144.227 126.046 145.442 127.443C146.688 128.81 147.31 130.785 147.31 133.367V134.689H142.571V133.048C142.571 131.955 142.359 131.165 141.933 130.679C141.508 130.162 140.885 129.904 140.065 129.904C138.394 129.904 137.559 130.922 137.559 132.957C137.559 134.111 137.863 135.19 138.47 136.192C139.108 137.195 140.247 138.41 141.888 139.838C143.984 141.66 145.427 143.316 146.217 144.804C147.007 146.293 147.401 148.04 147.401 150.045C147.401 152.657 146.748 154.662 145.442 156.06C144.166 157.457 142.298 158.156 139.837 158.156Z" />
+								<mask fill="white">
+									<path d="M181.645 80.1773C177.163 62.9016 167.082 47.5981 152.98 36.6586C138.878 25.7191 121.549 19.7602 103.701 19.7132C85.8532 19.6663 68.4929 25.534 54.3334 36.3992C40.1739 47.2644 30.0132 62.5147 25.4396 79.7665L28.05 80.4586C32.4707 63.7838 42.2915 49.0435 55.9774 38.5417C69.6634 28.04 86.4431 22.3685 103.694 22.4139C120.945 22.4592 137.694 28.2188 151.325 38.7924C164.955 49.3661 174.698 64.1578 179.031 80.8556L181.645 80.1773Z" />
+								</mask>
+								<path d="M181.645 80.1773C177.163 62.9016 167.082 47.5981 152.98 36.6586C138.878 25.7191 121.549 19.7602 103.701 19.7132C85.8532 19.6663 68.4929 25.534 54.3334 36.3992C40.1739 47.2644 30.0132 62.5147 25.4396 79.7665L28.05 80.4586C32.4707 63.7838 42.2915 49.0435 55.9774 38.5417C69.6634 28.04 86.4431 22.3685 103.694 22.4139C120.945 22.4592 137.694 28.2188 151.325 38.7924C164.955 49.3661 174.698 64.1578 179.031 80.8556L181.645 80.1773Z" stroke="#B71234" stroke-width="6" mask="url(#path-4-inside-1_17_6959)" />
+								<mask fill="white">
+									<path d="M24.578 122.23C28.9078 139.887 39.0698 155.567 53.4192 166.73C67.7685 177.894 85.4653 183.888 103.645 183.743C121.825 183.597 139.424 177.321 153.593 165.93C167.762 154.538 177.672 138.699 181.719 120.975L179.086 120.373C175.175 137.505 165.596 152.815 151.901 163.825C138.205 174.835 121.195 180.902 103.624 181.042C86.0518 181.183 68.9469 175.389 55.0775 164.599C41.2081 153.809 31.3859 138.654 27.2009 121.587L24.578 122.23Z" />
+								</mask>
+								<path d="M24.578 122.23C28.9078 139.887 39.0698 155.567 53.4192 166.73C67.7685 177.894 85.4653 183.888 103.645 183.743C121.825 183.597 139.424 177.321 153.593 165.93C167.762 154.538 177.672 138.699 181.719 120.975L179.086 120.373C175.175 137.505 165.596 152.815 151.901 163.825C138.205 174.835 121.195 180.902 103.624 181.042C86.0518 181.183 68.9469 175.389 55.0775 164.599C41.2081 153.809 31.3859 138.654 27.2009 121.587L24.578 122.23Z" stroke="#B71234" stroke-width="6" mask="url(#path-5-inside-2_17_6959)" />
+								<defs>
+									<clipPath>
+										<rect width="72.7845" height="72.7845" fill="white" transform="translate(43.2129 43.2158)" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<div class="footer__text text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</div>
+					</div>
+					<div class="footer__body">
+						<div data-one-spoller data-spollers="767.98,max" class="footer__spollers spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title">quick links</summary>
+								<nav class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item"><a href="index.html" class="spollers__link">Homepage</a></li>
+										<li class="spollers__item"><a href="catalog.html" class="spollers__link">Catalog</a></li>
+										<li class="spollers__item"><a href="about.html" class="spollers__link">About us</a></li>
+										<li class="spollers__item"><a href="blogs.html" class="spollers__link">blog</a></li>
+										<li class="spollers__item"><a href="billing-shippping.html" class="spollers__link">Billing & Shipping</a></li>
+										<li class="spollers__item"><a href="#" class="spollers__link">Contact us</a></li>
+									</ul>
+								</nav>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">Contact</summary>
+								<nav class="spollers__body">
+									<ul class="spollers__list">
+										<li class="spollers__item"><a href="https://www.google.com/maps?ll=-37.80510,144.90863" class="spollers__link spollers__link--capitalize">121 King St, Melbourne den 3000, California</a></li>
+										<li class="spollers__item"><a href="mailto:Info@example.com" class="spollers__link spollers__link--capitalize">Info@example.com</a></li>
+										<li class="spollers__item"><a href="tel:+91999999999" class="spollers__link spollers__link--capitalize">+91 999999999</a></li>
+									</ul>
+								</nav>
+								<div data-da=".footer__spollers, 768" class="footer__sociale">
+									<a href="#" class="footer__sociale-link">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3696 6.21155C18.3702 6.47991 18.4493 10.3617 22.5221 10.6037C22.5221 11.7229 22.5233 12.5344 22.5233 13.6026C22.2151 13.6201 19.8421 13.4479 18.3649 12.1307L18.3602 17.969C18.4165 22.0213 15.4346 24.4869 11.5364 23.635C4.81511 21.6246 7.0487 11.6561 13.7975 12.7225C13.7975 15.941 13.7993 12.7219 13.7993 15.941C11.0114 15.5309 10.0786 17.85 10.8198 19.5112C11.4936 21.0229 14.2698 21.3504 15.2383 19.2176C15.3479 18.8004 15.4024 18.324 15.4024 17.7897V6.1969L18.3696 6.21155Z" fill="white" />
+												<path d="M15 0.9375C22.7541 0.9375 29.0625 7.24594 29.0625 15C29.0625 22.7541 22.7541 29.0625 15 29.0625C7.24594 29.0625 0.9375 22.7541 0.9375 15C0.9375 7.24594 7.24594 0.9375 15 0.9375ZM15 0C6.71531 0 0 6.71625 0 15C0 23.2838 6.71531 30 15 30C23.2847 30 30 23.2847 30 15C30 6.71531 23.2847 0 15 0Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="#" class="footer__sociale-link">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<path d="M20.5068 7.65661H9.49305C9.25079 7.65268 9.0102 7.6975 8.78561 7.78841C8.56101 7.87931 8.35698 8.01445 8.18565 8.18578C8.01432 8.35711 7.87919 8.56113 7.78829 8.78573C7.69738 9.01033 7.65256 9.25091 7.65649 9.49317V20.5079C7.65649 21.5438 8.45524 22.3444 9.49305 22.3444H20.5077C20.75 22.3482 20.9905 22.3033 21.215 22.2124C21.4396 22.1214 21.6435 21.9863 21.8148 21.815C21.9861 21.6437 22.1213 21.4397 22.2122 21.2151C22.3032 20.9906 22.3481 20.7501 22.3443 20.5079V9.49317C22.348 9.2509 22.3029 9.01035 22.2119 8.78581C22.1208 8.56127 21.9856 8.3573 21.8142 8.18602C21.6428 8.01473 21.4388 7.8796 21.2142 7.78866C20.9896 7.69772 20.7491 7.65282 20.5068 7.65661ZM15.0112 12.1154C16.6396 12.1154 17.9596 13.3941 17.9596 14.9729C17.9596 16.5497 16.6396 17.8304 15.0112 17.8304C13.3837 17.8304 12.0637 16.5507 12.0637 14.9729C12.0637 13.3941 13.3837 12.1154 15.0112 12.1154ZM20.5068 20.0485C20.5068 20.371 20.369 20.5079 20.0474 20.5079H9.95055C9.62899 20.5079 9.49117 20.371 9.49117 20.0485V13.6229L10.6349 13.8713C10.5093 14.2795 10.4454 14.7042 10.4456 15.1313C10.4456 17.5725 12.4902 19.5525 15.0093 19.5525C17.5293 19.5525 19.573 17.5725 19.573 15.1313C19.573 14.6935 19.5065 14.2707 19.3837 13.8713L20.5059 13.6229V20.0485H20.5068ZM20.5068 11.7882C20.5068 11.91 20.4584 12.0268 20.3723 12.113C20.2861 12.1991 20.1693 12.2475 20.0474 12.2475H18.2109C18.089 12.2475 17.9722 12.1991 17.886 12.113C17.7999 12.0268 17.7515 11.91 17.7515 11.7882V9.95161C17.7515 9.82978 17.7999 9.71293 17.886 9.62678C17.9722 9.54063 18.089 9.49223 18.2109 9.49223H20.0474C20.1693 9.49223 20.2861 9.54063 20.3723 9.62678C20.4584 9.71293 20.5068 9.82978 20.5068 9.95161V11.7882Z" fill="white" />
+												<path d="M15 0.9375C22.7541 0.9375 29.0625 7.24594 29.0625 15C29.0625 22.7541 22.7541 29.0625 15 29.0625C7.24594 29.0625 0.9375 22.7541 0.9375 15C0.9375 7.24594 7.24594 0.9375 15 0.9375ZM15 0C6.71531 0 0 6.71625 0 15C0 23.2838 6.71531 30 15 30C23.2847 30 30 23.2847 30 15C30 6.71531 23.2847 0 15 0Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="#" class="footer__sociale-link">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<path d="M13.0234 22.6153H16.1705V14.999H18.2696L18.548 12.375H16.1705L16.1734 11.0606C16.1734 10.3762 16.239 10.0096 17.2205 10.0096H18.533V7.38464H16.433C13.9112 7.38464 13.0234 8.65777 13.0234 10.799V12.375H11.4512V15H13.0234V22.6153Z" fill="white" />
+												<path d="M15 0.9375C22.7541 0.9375 29.0625 7.24594 29.0625 15C29.0625 22.7541 22.7541 29.0625 15 29.0625C7.24594 29.0625 0.9375 22.7541 0.9375 15C0.9375 7.24594 7.24594 0.9375 15 0.9375ZM15 0C6.71531 0 0 6.71531 0 15C0 23.2847 6.71531 30 15 30C23.2847 30 30 23.2847 30 15C30 6.71531 23.2847 0 15 0Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="#" class="footer__sociale-link">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<path d="M14.9914 0.9375C22.741 0.9375 29.0458 7.24594 29.0458 15C29.0458 22.7541 22.741 29.0625 14.9914 29.0625C7.24176 29.0625 0.93696 22.7541 0.93696 15C0.93696 7.24594 7.24176 0.9375 14.9914 0.9375ZM14.9914 0C6.71144 0 0 6.71625 0 15C0 23.2838 6.71238 30 14.9914 30C23.2703 30 29.9827 23.2847 29.9827 15C29.9827 6.71531 23.2703 0 14.9914 0Z" fill="white" />
+												<path d="M21.0216 10.2463C21.0216 10.2463 19.3319 10 14.9388 10C10.5302 10 8.97868 10.2463 8.97868 10.2463C8.71885 10.2463 8.46155 10.2975 8.22149 10.3971C7.98143 10.4968 7.7633 10.6428 7.57956 10.8269C7.39582 11.011 7.25006 11.2296 7.15062 11.4702C7.05118 11.7107 7 11.9686 7 12.229V18.7713C7.00003 19.0316 7.05124 19.2895 7.15069 19.53C7.25015 19.7705 7.39591 19.9891 7.57964 20.1732C7.76338 20.3573 7.9815 20.5033 8.22155 20.6029C8.46159 20.7025 8.71887 20.7537 8.97868 20.7537C8.97868 20.7537 10.5302 21 14.9437 21C19.3317 21 21.0213 20.7537 21.0213 20.7537C21.546 20.7537 22.0492 20.5449 22.4203 20.1731C22.7913 19.8013 22.9999 19.2971 23 18.7713V12.229C23 11.7031 22.7916 11.1988 22.4205 10.827C22.0495 10.4552 21.5463 10.2463 21.0216 10.2463ZM12.578 18.6395V12.396L17.9735 15.5175L12.578 18.6395Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+									<a href="#" class="footer__sociale-link">
+										<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<path d="M14.9738 0.9375C22.7234 0.9375 29.0282 7.24594 29.0282 15C29.0282 22.7541 22.7234 29.0625 14.9738 29.0625C7.22419 29.0625 0.919382 22.7541 0.919382 15C0.919382 7.24594 7.22419 0.9375 14.9738 0.9375ZM14.9738 0C6.69387 0 -0.0175781 6.71625 -0.0175781 15C-0.0175781 23.2838 6.6948 30 14.9738 30C23.2528 30 29.9651 23.2847 29.9651 15C29.9651 6.71531 23.2528 0 14.9738 0Z" fill="white" />
+												<path d="M18.1847 7.22091C14.3378 6.53675 12.3907 7.58588 11.2684 8.40718C10.1462 9.22825 8.88175 10.7166 8.98878 13.317C9.09557 15.9176 11.3039 16.2938 11.3039 16.2938C11.3039 16.2938 11.5532 15.8316 11.6067 15.5239C11.6602 15.2157 11.6423 14.908 11.2506 14.3776C10.4671 13.1801 11.0903 11.0246 11.9273 10.2377C12.7212 9.4911 13.9221 8.42424 16.5225 8.59528C19.6064 8.79819 19.5681 12.1195 19.5681 12.1195C19.5326 14.1895 19.2119 14.7881 18.3924 16.1057C17.3773 17.4056 15.5784 17.0294 15.2403 16.5674C14.6881 15.7464 15.3471 14.2409 15.7387 12.7011C16.1308 11.1615 15.6497 10.9732 15.3826 10.7337C15.1153 10.4942 13.744 10.1521 13.0137 11.6576C12.2835 13.1628 13.0315 14.5316 13.0315 14.5316C13.0315 14.5316 12.8002 15.5069 12.212 17.5937C11.6243 19.6809 11.4284 22.042 11.7311 23C12.5683 22.5208 13.1561 21.4775 13.5835 20.4165C14.0109 19.3559 14.296 17.6621 14.385 17.5937C14.5273 17.7651 15.5604 18.364 15.5604 18.364C16.362 18.7402 17.7512 18.7402 19.0512 18.1243C20.3514 17.5084 21.7586 15.3529 21.9187 13.5053C22.3283 9.98109 20.7255 7.88262 18.1847 7.22091Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath>
+													<rect width="30" height="30" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</div>
+							</details>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">
+					<a href="#" class="footer__copy-link">2024 © Californiatrees.org</a>
+					<a href="#" class="footer__copy-link">Privacy Policy</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240318155703"></script>
+</body>
+
+</html>
